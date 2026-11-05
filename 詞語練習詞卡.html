@@ -1,0 +1,367 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>詞語練習詞卡</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--tx:#222;--mu:#777;--ac:#2f6f5e;--ok:#2e7d32;--no:#c62828;--bd:#ddd;box-sizing:border-box;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191a;--card:#222527;--tx:#e8e8e8;--mu:#999;--ac:#6fc2a9;--ok:#7bd88a;--no:#ff8a80;--bd:#3a3e40;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17191a;--card:#222527;--tx:#e8e8e8;--mu:#999;--ac:#6fc2a9;--ok:#7bd88a;--no:#ff8a80;--bd:#3a3e40;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+html{-webkit-tap-highlight-color:transparent}
+button,a.b,summary,input[type=checkbox],input[type=radio],input[type=range]{touch-action:manipulation}
+main{max-width:1000px;margin:0 auto;padding:calc(12px + env(safe-area-inset-top,0px)) calc(12px + env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) calc(12px + env(safe-area-inset-left,0px));overflow-wrap:anywhere}
+input[type=number],input[type=text],textarea,button{font-family:inherit;font-size:16px;-webkit-appearance:none;appearance:none;border-radius:8px}
+input[type=number]{color:var(--tx);background:var(--bg);border:1px solid var(--bd);padding:4px 6px}
+input[type=checkbox],input[type=radio]{-webkit-appearance:auto;appearance:auto;width:20px;height:20px;margin:0 4px 0 0;vertical-align:middle}
+input[type=range]{width:min(260px,100%)}
+button,a.b{min-height:40px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+nav button{flex:1 1 0;min-width:0;padding:8px 4px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:8px;cursor:pointer;font:inherit}
+nav button.on{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:12px}
+.word{font-size:clamp(1.9rem,8vw,2.6rem);text-align:center;font-weight:700;margin:10px 0;word-break:break-all}
+textarea,input[type=text]{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:8px}
+textarea{resize:vertical;min-height:70px}
+button.b{padding:8px 14px;border:0;border-radius:8px;background:var(--ac);color:var(--bg);cursor:pointer;font:inherit;margin:4px 4px 0 0}
+button.g,a.b.g{background:transparent;color:var(--tx);border:1px solid var(--bd)}a.b{display:inline-flex;align-items:center;border-radius:8px;cursor:pointer}a.b:not(.g){background:var(--ac);color:var(--bg)}
+.mu{color:var(--mu);font-size:.85rem}.ok{color:var(--ok)}.no{color:var(--no)}
+.ans{white-space:pre-wrap;margin:8px 0;overflow-wrap:anywhere}
+.row{display:grid;grid-template-columns:auto 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--bd)}
+.row2{padding:10px 0;border-top:1px solid var(--bd)}
+.pg{display:flex;gap:10px;align-items:center;justify-content:center;margin:8px 0}
+.bar{height:8px;border-radius:4px;background:var(--bd);overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}
+.hide{display:none}
+#t-practice:not(.hide){display:grid;grid-template-columns:190px minmax(0,1fr);gap:12px;align-items:start}
+@media(max-width:720px){#t-practice:not(.hide){grid-template-columns:1fr}#t-practice aside{order:2}.card{padding:14px}button.b,a.b{margin:6px 6px 0 0;padding:10px 14px}}
+details{margin:4px 0}summary{cursor:pointer}.hn{margin:2px 0}
+.exs{font-size:.9rem;color:var(--mu);margin:2px 0 6px;padding-left:.8em;border-left:3px solid var(--bd)}.exs b{color:var(--tx)}
+.li{padding-left:1.1em;text-indent:-1.1em}.li2{padding-left:2.3em}
+#t-practice.rv:not(.hide){grid-template-columns:1fr}#t-practice.rv aside,.rv #minlbox{display:none}a.b{text-decoration:none;display:inline-block}.ans a,.mu a{color:var(--ac)}
+code{background:var(--bd);padding:0 .3em;border-radius:4px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em}.bx{margin:1.7em 0 !important}.bx>.mu:first-child{margin-bottom:.35em}#rel{margin-top:1.7em}.l2{padding-left:2.3em}.l3{padding-left:3.5em}.pl{margin:1px 0}.bq{border-left:3px solid var(--bd);padding-left:.6em;color:var(--mu)}
+</style>
+</head>
+<body>
+<main>
+<nav id="nav"></nav>
+
+<section id="t-practice">
+ <aside class="card"><b>最近作答</b><div class="mu">最近 20 個，暫不會再抽到（點開可看意思）</div><div id="recent"></div></aside>
+ <div>
+ <div class="card">
+  <div style="margin-bottom:8px"><button class="b" id="m-p">練習模式</button><button class="b g" id="m-r">溫習模式</button></div>
+  <div class="mu" id="stat"></div>
+  <div class="word" id="w">—</div>
+  <div id="ex0"></div><div id="boxes"></div><div id="rel"></div>
+  <button class="b" id="sub">提交</button><button class="b g" id="hintb">需要提示</button><button class="b g" id="idk">我不懂</button><button class="b g" id="skip">換一個</button><button class="b g hide" id="back">返回上一張</button><a class="b g hide" id="gg" target="_blank" rel="noopener" href="#">Google 搜尋</a>
+  <div class="mu" id="minlbox" style="margin-top:8px">字眼比對：每個字眼至少要有 <input type="number" id="minl" min="1" max="6" style="width:3.2em"> 個連續相同的字。釋義中「的」前後的詞（如「極短的時間」＝極短＋時間）須同時出現；「、」分隔的是同義選項；可在詞庫用「字眼：」自訂。</div>
+ </div>
+ <div class="card hide" id="sent"><b>造句</b>（用「<span id="sw"></span>」造一句，可略過）
+  <textarea id="sin" placeholder="輸入你的造句"></textarea>
+  <button class="b" id="ssave">儲存並匯出 .md</button><button class="b g" id="ssave2">只儲存</button><div id="smsg" class="mu"></div>
+ </div>
+ </div>
+</section>
+
+<section id="t-import" class="hide">
+ <div class="card">
+  <p>選擇 <b>.html</b>（Notion 單頁匯出，僅匯入「類別」含「詞語」者）、<b>.csv</b>、<b>.md</b> 或本頁匯出的 <b>.json</b>，可一次多選。意思＝「完整摘錄」；例句、台語條目、被 .md 連結截斷的條目自動忽略；「◦ 詞：解釋」會另立為獨立詞語；「／＆、」連接的多個詞語會拆開。</p>
+  <input type="file" id="file" multiple>
+  <div class="mu" id="impinfo"></div>
+ </div>
+ <div class="card hide" id="stage"></div>
+</section>
+
+<section id="t-edit" class="hide">
+ <div class="card"><input type="text" id="q" placeholder="搜尋詞語或意思…"><div class="mu" id="einfo"></div>
+  <button class="b g" id="delall" style="color:var(--no)">全部刪除</button><button class="b g" id="genall">用 Claude 為目前範圍產生字眼</button><button class="b g" id="genreset">重設產生進度</button><div class="mu" id="ginfo"></div>
+  <div class="mu">意思欄用「【詞性】」開頭分段，段內「例：句子」是該意思的例句，最後的「【例句】」段是未分配到特定意思的例句（段與段之間空一行），每個詞性在練習時各有一個輸入框。段內可加一行「字眼：極短|很短,時間」＝必須同時有（逗號分隔）、組內任一同義寫法（| 分隔）。沒寫時系統依釋義自動推算。意思文字支援 Markdown：「* 」條列（行首空兩格＝次層）、`標籤`、**粗體**、*斜體*、[文字](網址)。</div>
+  <div id="elist"></div><div class="pg" id="epg"></div></div>
+</section>
+
+<section id="t-sent" class="hide"><div class="card"><p>造句會存在這裡，可逐句匯出成 Notion 可匯入的 .md（標題＝造句、類別＝句子, 練習、日期＝當日，其餘留空），或全部匯出成一個 CSV。</p><button class="b" id="sentcsv">全部匯出 CSV</button><div id="sentmsg" class="mu"></div><div id="slist"></div></div></section>
+
+<section id="t-backup" class="hide">
+ <div class="card">
+  <p>換瀏覽器前先匯出，到新瀏覽器的此頁匯入即可。</p>
+  <button class="b" id="exp">匯出 JSON</button>
+  <textarea id="expbox" class="hide" readonly></textarea>
+  <hr style="border:0;border-top:1px solid var(--bd);margin:16px 0">
+  <p>匯入備份檔：<input type="file" id="bfile"></p>
+  <label><input type="radio" name="bm" value="merge" checked> 合併（同詞覆蓋）</label>
+  <label><input type="radio" name="bm" value="replace"> 取代全部</label>
+  <div id="binfo" class="mu"></div>
+  <p class="mu" id="cnt"></p>
+ </div>
+</section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Math.random().toString(36).slice(2,10);
+let db={words:[],minLen:2,v:2,recent:[],sents:[]};
+try{const t=localStorage.getItem('vocab_v1');if(t)db=Object.assign(db,JSON.parse(t))}catch(e){}
+const stripW=(t,w)=>t.split('\n').map(l=>{const m=l.match(/^(\s*(?:[*\-]\s+)?)([^：:︰]{1,16})[：:︰]\s*(.+)$/);return m&&m[2].replace(/[⑴-⒇①-⑩]/g,'').split(/[／＆、\/&,，]/).map(z=>z.trim()).includes(w)?m[1]+m[3]:l}).join('\n');
+const norm1=x=>({id:x.id||uid(),word:x.word,note:x.note||'',alts:x.alts||[],subs:x.subs||[],parent:x.parent||'',ex0:x.ex0||[],senses:(x.senses&&x.senses.length?x.senses:[{pos:'',text:x.meaning||''}]).map(s=>({pos:s.pos||'',text:stripW(s.text||'',x.word),keys:s.keys||'',kd:s.kd||0,ex:s.ex||[]}))});
+db.words=db.words.map(norm1);db.recent=db.recent||[];db.sents=db.sents||[];
+const save=()=>{try{localStorage.setItem('vocab_v1',JSON.stringify(db))}catch(e){}};
+const ser=(ss,ex0)=>ss.map(x=>(x.pos?`【${x.pos}】\n`:'')+x.text+(x.keys?`\n字眼：${x.keys}`:'')+(x.ex||[]).map(e=>'\n例：'+e).join('')).join('\n\n')+(ex0&&ex0.length?'\n\n【例句】\n'+ex0.map(e=>'例：'+e).join('\n'):'');
+const des=t=>{const ex0=[];const out=t.split(/\n\s*\n/).map(b=>b.trim()).filter(Boolean).map(b=>{const m=b.match(/^【([^】]*)】\s*([\s\S]*)$/);const pos=m?m[1].trim():'';let tx=m?m[2]:b,keys='';const ex=[];
+ tx=tx.split('\n').filter(l=>{let k=l.match(/^\s*字眼[：:]\s*(.*)$/);if(k){keys=k[1].trim();return false}k=l.match(/^\s*例[：:]\s*(.+)$/);if(k){ex.push(k[1].trim());return false}return true}).join('\n').trim();
+ if(pos==='例句'&&!tx){ex0.push(...ex);return null}return{pos,text:tx,keys,ex}}).filter(x=>x&&x.text);out.ex0=ex0;return out};
+
+/* tabs */
+const tabs=[['practice','練習'],['import','匯入'],['edit','詞庫'],['sent','造句'],['backup','備份']];
+$('#nav').innerHTML=tabs.map(([k,n])=>`<button data-t="${k}">${n}</button>`).join('');
+function tab(k){tabs.forEach(([x])=>$('#t-'+x).classList.toggle('hide',x!==k));document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===k));
+ if(k==='edit')renderEdit();if(k==='backup')$('#cnt').textContent='目前詞庫共 '+db.words.length+' 個詞語';if(k==='practice')updStat();if(k==='sent')renderSents()}
+$('#nav').onclick=e=>{if(e.target.dataset.t)tab(e.target.dataset.t)};
+
+/* parsing */
+function parseCSV(t){const rows=[];let r=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
+ if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
+ else if(c=='"')q=true;else if(c==','){r.push(f);f=''}else if(c=='\n'){r.push(f);rows.push(r);r=[];f=''}else if(c!='\r')f+=c}
+ if(f||r.length){r.push(f);rows.push(r)}return rows}
+let sk={cat:0,tw:0,link:0,empty:0};
+const POSRE=/^(名詞|動詞|形容詞|副詞|量詞|代詞|介詞|連接詞|助詞|擬聲詞|擬態詞|歎詞|感嘆詞|(?:名|動|形容|副)詞(?:[／\/](?:名|動|形容|副)詞)+)\s*[：:︰]\s*$/;
+const LABELS=/^(本意|本義|引伸|引申|其他意思|同義詞|近義詞|反義詞|廣東話|香港用語|花語|味道|成語|造句|如|例如|亦作|異用詞|常見設定|空耳.*|ABO|台語.*)$/;
+const tok=s=>s.split(/[／＆、\/&\n]/).map(x=>x.replace(/[…⋯]/g,'').trim()).filter(Boolean);
+const CIR=/[⑴-⒇①-⑩]/g;
+function build(name,raw){
+ const pre=[],exl=[];let hit=false;for(const l of(raw||'').split('\n')){if(!hit){if(/^\s*例[／\/]造句/.test(l))hit=true;else pre.push(l)}else exl.push(l)}
+ const first=pre.find(l=>l.trim());if(!first){sk.empty++;return[]}
+ if(/台語|閩南/.test(first)){sk.tw++;return[]}
+ if(pre.some(l=>!/https?:\/\//.test(l)&&/\u0001|%[0-9A-Fa-f]{2}|\.md\b/.test(l))){sk.link++;return[]}
+ const nm=name||'',outside=tok(nm.replace(/[（(][^）)]*[）)]/g,'')),inside=[];
+ nm.replace(/[（(]([^）)]*)[）)]/g,(m,a)=>{inside.push(...tok(a));return''});
+ const mainName=outside[0]||inside[0]||'',all=new Set([...outside,...inside]),allN=new Set([...all].map(w=>w.replace(/[，,]/g,'')));
+ const groups=[],subs=[],alts=[];let g=null,yin='',parent='';
+ const open=(base,tag)=>{g={base:[base||'',yin?'音'+yin:''].filter(Boolean).join(' · '),tag:tag||'',lines:[]};groups.push(g)};
+ const clean=t=>t.replace(/[（(]\s*如\s*[︰:：][^）)]*[）)]/g,'').trim();
+ for(const l of pre){const t0=l.trim();if(!t0||/https?:\/\//.test(l))continue;
+  if(/^[—─\-]{2,}$/.test(t0)){yin='';continue}
+  let m=t0.match(/^音[「『]([^」』]*)[」』]時\s*[：:︰]?$/);if(m){yin=m[1];continue}
+  m=t0.match(POSRE);if(m){open(m[1]);parent='';continue}
+  m=t0.match(/^[—─]\s*(?:`([^`]*)`)?\s*(.+)$/);
+  if(m){const t=clean(m[2]);if(t&&!/台語|閩南/.test(t)){open('',m[1]);g.lines.push(t);parent=t}continue}
+  const bul=/^[•・\-\*◦‣▪]/.test(t0);let t=t0.replace(/^[•・\-\*◦‣▪]\s*/,'').trim();
+  if(bul){const k=t.match(/^([^：:︰]{1,16})[：:︰]\s*(.*)$/);
+   if(k){const lab=k[1].replace(CIR,'').trim(),suf=(k[1].match(CIR)||[''])[0],d=clean(k[2]);
+    if(/^(同義詞|近義詞)$/.test(lab)){alts.push(...d.split(/[、／\/，,]/).map(x=>x.trim()).filter(Boolean));continue}
+    if(d&&/^[\u4e00-\u9fff／、]+$/.test(lab)&&!LABELS.test(lab)&&!/台語|閩南/.test(d)){tok(lab).forEach(w=>subs.push({w,d,suf,parent:parent.replace(/^(本意|本義|引伸|引申)[：:︰]/,''),base:g?g.base:''}));continue}}}
+  t=clean(t);const hm=t.match(/^([^：:︰]{1,40})[：:︰]\s*$/);if(hm){const hl=tok(hm[1].replace(CIR,''));if(hl.length&&hl.every(x=>all.has(x)||allN.has(x.replace(/[，,]/g,''))))continue}
+  const mm=t.match(/^([^：:︰]{1,16})[：:︰]\s*(.+)$/);
+  if(mm){const lt=tok(mm[1].replace(CIR,''));if(lt.length&&lt.every(x=>all.has(x)))t=mm[2].trim()}
+  if(!t||/^(如|例如)\s*[：:︰]/.test(t)||/台語|閩南/.test(t))continue;
+  const lv=!bul||/^`[^`]*`$/.test(t)?0:(/^[◦‣▪]/.test(t0)?2:1);if(!g)open('');g.lines.push((lv===2?'  * ':lv===1?'* ':'')+t);parent=t}
+ const ms=groups.filter(x=>x.lines.length).map(x=>({pos:[x.base,x.tag].filter(Boolean).join(' · '),text:x.lines.join('\n'),ex:[]}));
+ const subSet=new Set(subs.map(x=>x.w)),map=new Map();
+ if(ms.length)[...outside,...inside.filter(w=>!subSet.has(w))].forEach(w=>{if(!map.has(w))map.set(w,{word:w,note:'',alts:[...alts],senses:ms.map(x=>({...x,ex:[]})),ex0:[]})});
+ subs.forEach(x=>{let e=map.get(x.w);if(!e){e={word:x.w,note:'',alts:[],senses:[],ex0:[]};map.set(x.w,e)}
+  e.senses.push({pos:[x.base,x.suf].filter(Boolean).join(' '),text:x.d,ex:[]});
+  if(x.parent&&mainName){const lab=[x.base,mainName+'的引伸意思'+x.suf].filter(Boolean).join(' · ');if(!e.senses.some(y=>y.text===x.parent&&y.pos===lab))e.senses.push({pos:lab,text:x.parent,ex:[]})}});
+ if(!map.size){sk.empty++;return[]}
+ const subNames=[...new Set(subs.map(x=>x.w))];
+ map.forEach(e=>{if(subSet.has(e.word)){if(mainName&&e.word!==mainName)e.parent=mainName}else{const l=subNames.filter(w=>w!==e.word);if(l.length)e.subs=l}});
+ /* 例／造句：依標題詞語與意思分配 */
+ const first0=[...map.values()].find(e=>!subSet.has(e.word))||[...map.values()][0];
+ const put0=t=>{if(first0.senses.length===1)first0.senses[0].ex.push(t);else first0.ex0.push(t)};
+ const place=(h,t)=>{if(!h){put0(t);return}
+  const qm=h.match(/[（(]([^）)]*)[）)]/),q=qm?qm[1]:'',suf=(h.match(CIR)||[''])[0];
+  const ws=tok(h.replace(/[（(][^）)]*[）)]/g,'').replace(CIR,''));let ok=false;
+  ws.forEach(w=>{const e=map.get(w);if(!e)return;ok=true;let i=-1;
+   if(suf)i=e.senses.findIndex(z=>z.pos.includes(suf)&&!z.pos.includes('引伸'));
+   if(i<0&&q)i=e.senses.findIndex(z=>z.pos.includes(q)||z.text.includes(q));
+   if(i<0&&subSet.has(w))i=0;if(i<0&&e.senses.length===1)i=0;
+   if(i>=0)e.senses[i].ex.push(t);else e.ex0.push(t)});
+  if(!ok)put0(t)};
+ let hd='';for(let l of exl){l=l.replace(/`/g,'').replace(/\u0001/g,'').trim();if(!l)continue;
+  let m=l.match(/^\d+\s*[.．、)）]\s*(.+)$/);
+  if(m){const t=m[1].replace(/https?:\/\/[\x21-\x7e]+/g,'').trim();if(t)place(hd,t);continue}
+  m=l.match(/^(.+?)\s*[：:︰]\s*$/);if(m)hd=m[1]}
+ return[...map.values()]}
+function parseHTML(t){const d=new DOMParser().parseFromString(t,'text/html');const name=(d.querySelector('.page-title,h1')?.textContent||'').trim();let cat='',raw='';
+ d.querySelectorAll('tr.property-row').forEach(r=>{const h=r.querySelector('th')?.textContent.trim(),td=r.querySelector('td');if(!td)return;
+  if(h==='類別')cat=td.textContent;
+  if(h==='完整摘錄'){const c=td.cloneNode(true);c.querySelectorAll('br').forEach(b=>b.replaceWith('\n'));c.querySelectorAll('code').forEach(x=>x.replaceWith('`'+x.textContent+'`'));c.querySelectorAll('a').forEach(a=>a.replaceWith('\u0001'+a.textContent+'\u0001'));raw=c.textContent}});
+ if(!cat.includes('詞語')){sk.cat++;return[]}return build(name,raw)}
+function parseFile(fn,t){t=t.replace(/^\uFEFF/,'');
+ if(/\.json$/i.test(fn)){const j=JSON.parse(t);return(Array.isArray(j)?j:j.words||[]).map(norm1)}
+ if(/\.html?$/i.test(fn))return parseHTML(t);
+ if(/\.csv$/i.test(fn))return parseCSV(t).filter(r=>r[0]&&r[0]!=='名稱').flatMap(r=>build(r[0],r[1]));
+ const tm=t.match(/^#\s*(.+)$/m),mm=t.match(/完整摘錄[:：]\s*([\s\S]*)/),cm=t.match(/類別[:：]\s*([^\n]*)/);if(!tm||!mm)return[];
+ if(cm&&!cm[1].includes('詞語')){sk.cat++;return[]}
+ return build(tm[1],mm[1].split(/\n\s*(?:類別|詞性|情感|子屬性|常用|頁面來源|日期)[^\n]{0,12}[:：]/)[0])}
+
+/* import staging */
+let staged=[],spage=0;const PS=50;
+$('#file').onchange=async e=>{sk={cat:0,tw:0,link:0,empty:0};let bad=0;
+ for(const f of e.target.files){try{parseFile(f.name,await f.text()).forEach(r=>staged.push({...r,txt:ser(r.senses,r.ex0),keep:true}))}catch(err){bad++}}
+ const have=new Set(db.words.map(w=>w.word)),seen=new Set();
+ staged.forEach(s=>{if(s.dup===undefined){s.dup=have.has(s.word)||seen.has(s.word);if(s.dup)s.keep=false}seen.add(s.word)});
+ $('#impinfo').textContent=`待確認 ${staged.length} 個詞語；略過：非詞語類別 ${sk.cat}、台語 ${sk.tw}、被 .md 連結截斷 ${sk.link}、無內容 ${sk.empty}`+(bad?`；${bad} 個檔案讀取失敗`:'');
+ e.target.value='';spage=0;renderStage()};
+function renderStage(){const el=$('#stage');if(!staged.length){el.classList.add('hide');return}el.classList.remove('hide');
+ const pages=Math.ceil(staged.length/PS);spage=Math.min(spage,pages-1);const n=staged.filter(s=>s.keep).length;
+ el.innerHTML=`<b>確認匯入</b>（可直接修改詞語與意思；「已存在」＝詞庫或本批已有同詞，預設不勾，勾選會覆蓋）<br>
+ <button class="b" id="sadd">確認加入 ${n} 個</button><button class="b g" id="sall">全選</button><button class="b g" id="snone">全不選</button><button class="b g" id="sclr">清空</button>
+ <div class="pg"><button class="b g" data-p="-1">‹</button>${spage+1} / ${pages}<button class="b g" data-p="1">›</button></div>`+
+ staged.slice(spage*PS,spage*PS+PS).map((s,i)=>`<div class="row" data-k="${spage*PS+i}"><input type="checkbox" ${s.keep?'checked':''}><div><input type="text" value="${esc(s.word)}">${s.dup?'<span class="mu">已存在</span>':''}<textarea>${esc(s.txt)}</textarea></div></div>`).join('')}
+$('#stage').addEventListener('input',e=>{const r=e.target.closest('.row');if(!r)return;const s=staged[r.dataset.k];
+ if(e.target.tagName==='TEXTAREA')s.txt=e.target.value;else if(e.target.type==='text')s.word=e.target.value;else{s.keep=e.target.checked;$('#sadd').textContent=`確認加入 ${staged.filter(x=>x.keep).length} 個`}});
+$('#stage').addEventListener('click',e=>{const t=e.target;
+ if(t.dataset.p){spage=Math.max(0,spage+ +t.dataset.p);renderStage();scrollTo(0,0)}
+ else if(t.id==='sall'){staged.forEach(s=>s.keep=true);renderStage()}
+ else if(t.id==='snone'){staged.forEach(s=>s.keep=false);renderStage()}
+ else if(t.id==='sclr'){staged=[];$('#impinfo').textContent='';renderStage()}
+ else if(t.id==='sadd'){let a=0,u=0;staged.filter(s=>s.keep&&s.word.trim()&&des(s.txt).length).forEach(s=>{
+   const w=s.word.trim(),ss=des(s.txt),ex=db.words.find(x=>x.word===w);
+   if(ex){ex.senses=ss;ex.ex0=ss.ex0;if(s.note)ex.note=s.note;if(s.alts?.length)ex.alts=s.alts;if(s.subs)ex.subs=s.subs;if(s.parent)ex.parent=s.parent;u++}else{db.words.push({id:uid(),word:w,note:s.note||'',alts:s.alts||[],subs:s.subs||[],parent:s.parent||'',senses:ss,ex0:ss.ex0});a++}});
+  save();staged=staged.filter(s=>!s.keep);$('#impinfo').textContent=`已新增 ${a} 個、覆蓋 ${u} 個；詞庫共 ${db.words.length} 個`;renderStage()}});
+
+/* edit */
+let epage=0;const EP=30;
+function renderEdit(){const q=$('#q').value.trim();const l=q?db.words.filter(w=>w.word.includes(q)||ser(w.senses).includes(q)):db.words;
+ const pages=Math.max(1,Math.ceil(l.length/EP));epage=Math.min(epage,pages-1);
+ $('#einfo').textContent=`共 ${l.length} 個詞語（修改後離開輸入框即自動儲存）`;genInfo();
+ $('#elist').innerHTML=l.slice(epage*EP,epage*EP+EP).map(w=>`<div class="row2" data-id="${w.id}"><input type="text" data-f="word" value="${esc(w.word)}"><textarea data-f="senses" style="min-height:110px">${esc(ser(w.senses,w.ex0))}</textarea>
+ <input type="text" data-f="alts" placeholder="其他可接受答案（用／分隔）" value="${esc(w.alts.join('／'))}"><input type="text" data-f="note" placeholder="備註" value="${esc(w.note)}"><input type="text" data-f="subs" placeholder="附屬／引伸詞語（用／分隔）" value="${esc((w.subs||[]).join('／'))}"><input type="text" data-f="parent" placeholder="引伸自（主詞）" value="${esc(w.parent||'')}"><button class="b g" data-del="1">刪除</button><button class="b g" data-gen="1">Claude 產生字眼</button></div>`).join('');
+ $('#epg').innerHTML=`<button class="b g" data-p="-1">‹</button>${epage+1} / ${pages}<button class="b g" data-p="1">›</button>`}
+$('#q').oninput=()=>{epage=0;renderEdit()};
+$('#epg').onclick=e=>{if(e.target.dataset.p){epage=Math.max(0,epage+ +e.target.dataset.p);renderEdit();scrollTo(0,0)}};
+$('#elist').addEventListener('change',e=>{const r=e.target.closest('.row2'),w=db.words.find(x=>x.id===r.dataset.id),f=e.target.dataset.f;if(!w||!f)return;
+ const v=e.target.value;if(f==='alts')w.alts=v.split(/[／\/]/).map(s=>s.trim()).filter(Boolean);else if(f==='subs')w.subs=v.split(/[／\/]/).map(z=>z.trim()).filter(Boolean);else if(f==='senses'){const d=des(v);w.senses=d;w.ex0=d.ex0}else w[f]=v;save()});
+function arm(btn,label,fn){if(btn.dataset.arm){clearTimeout(+btn.dataset.arm);delete btn.dataset.arm;btn.textContent=btn.dataset.o;fn();return}
+ btn.dataset.o=btn.textContent;btn.textContent=label;btn.dataset.arm=setTimeout(()=>{delete btn.dataset.arm;btn.textContent=btn.dataset.o},4000)}
+$('#elist').addEventListener('click',async e=>{const t=e.target,r=t.closest('.row2');if(!r)return;const id=r.dataset.id;
+ if(t.dataset.del)arm(t,'再按一次確認刪除',()=>{db.words=db.words.filter(x=>x.id!==id);save();renderEdit()});
+ else if(t.dataset.gen){const w=db.words.find(x=>x.id===id);t.textContent='產生中…';try{const n=await genKeys([w],m=>$('#einfo').textContent=m);if(n)renderEdit();else t.textContent='Claude 產生字眼'}catch(err){t.textContent='失敗，請重試'}}});
+$('#delall').onclick=e=>{if(!db.words.length)return;arm(e.target,`再按一次確認：刪除全部 ${db.words.length} 個`,()=>{db.words=[];db.recent=[];save();queue=[];cur=null;renderEdit()})};
+async function genKeys(ws,msg){const sm=window.claude&&await claude.use('sample');if(!sm){msg('此環境無法使用 Claude');return 0}
+ const items=ws.flatMap(w=>w.senses.map((s,i)=>({id:w.id+'|'+i,詞:w.word,詞性:s.pos,釋義:s.text})));
+ const j=await sm.json(`你是中文詞語練習的出題者。請參考教育部重編國語辭典修訂本與漢典（zdic）對各詞的釋義，為下列每個詞義列出「判斷使用者答對所必須具備的核心字眼」。
+規則：用半形逗號分隔必須同時具備的概念（通常 2–3 個，不要過多）；每個概念內用 | 列出可接受的同義寫法（含常見近義說法）。字眼要能排除其他意思，例如「頃刻」＝形容極短的時間，必須同時有「極短」與「時間」概念，不能只憑「極短」。若釋義列出多個互為替代的意思（以換行分開），請只針對最核心的一個意思，或用概念涵蓋。
+只回覆 JSON：{"items":[{"id":"原樣照抄","keys":"極短|很短|短暫|片刻,時間|時刻|時候"}]}\n資料：${JSON.stringify(items)}`,{modelTier:'default'});
+ let n=0;ws.forEach(w=>w.senses.forEach(z=>{if(!z.keys)z.kd=1}));(j.items||j).forEach(x=>{const [id,i]=String(x.id).split('|');const w=db.words.find(y=>y.id===id);if(w&&w.senses[+i]&&x.keys){w.senses[+i].keys=String(x.keys).trim();n++}});save();return n}
+let genStop=false;
+const pend=l=>l.filter(w=>w.senses.some(z=>!z.keys&&!z.kd));
+const scope=()=>{const q=$('#q').value.trim();return q?db.words.filter(w=>w.word.includes(q)||ser(w.senses).includes(q)):db.words};
+function genInfo(){const l=scope(),p=pend(l).length;$('#ginfo').textContent=l.length?`字眼進度：${l.length-p} / ${l.length} 個詞語已處理，${p?'按上面的按鈕會從未處理的繼續':'全部完成'}`:''}
+$('#genall').onclick=async e=>{const b=e.target;if(b.dataset.run){genStop=true;b.textContent='停止中…';return}
+ const all=scope(),l=pend(all);
+ if(!l.length){$('#einfo').textContent='目前範圍內的詞語都已處理過（沒有字眼的可按「重設產生進度」再試）';return}
+ b.dataset.run=1;genStop=false;b.textContent='停止產生';const base=all.length-l.length;
+ try{for(let i=0;i<l.length&&!genStop;i+=10){$('#einfo').textContent=`Claude 產生字眼中… ${base+i} / ${all.length}（可隨時停止，下次從這裡繼續）`;await genKeys(l.slice(i,i+10),m=>$('#einfo').textContent=m);genInfo()}}
+ catch(err){$('#einfo').textContent='中斷（可能未授權或太頻繁），已完成的已保留；再按一次會從中斷處繼續'}
+ delete b.dataset.run;b.textContent='用 Claude 為目前範圍產生字眼';renderEdit()};
+$('#genreset').onclick=()=>{scope().forEach(w=>w.senses.forEach(z=>{z.kd=0}));save();genInfo()};
+
+/* backup */
+$('#exp').onclick=async()=>{const json=JSON.stringify({v:2,minLen:db.minLen,words:db.words,sents:db.sents},null,1);let ok=false;
+ try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:'詞卡資料.json',data:json});ok=true}}catch(e){}
+ if(!ok){const b=$('#expbox');b.value=json;b.classList.remove('hide');b.select()}};
+$('#bfile').onchange=async e=>{try{const j=JSON.parse(await e.target.files[0].text());const ws=(j.words||j).map(x=>({...norm1(x),id:uid()})).filter(x=>x.word&&x.senses.some(s=>s.text));
+ if(document.querySelector('[name=bm]:checked').value==='replace')db.words=ws;else ws.forEach(n=>{const ex=db.words.find(x=>x.word===n.word);if(ex)Object.assign(ex,n,{id:ex.id});else db.words.push(n)});
+ if(j.minLen)db.minLen=j.minLen;if(j.sents)j.sents.forEach(x=>{if(!db.sents.some(y=>y.text===x.text))db.sents.push({...x,id:x.id||uid()})});save();queue=[];$('#binfo').textContent=`已匯入 ${ws.length} 個，詞庫共 ${db.words.length} 個`}catch(err){$('#binfo').textContent='檔案格式錯誤'}e.target.value=''};
+
+/* practice: wording match */
+const SEPRE=/[\s，。、；：！？「」『』（）()\[\]［］\/／,.;:!?"“”‘’•◦·\-—…︰＆&〔〕《》〈〉的了是在地得之]+/;
+const runs=s=>s.split(SEPRE).filter(Boolean);
+function hits(ans,text){const n=db.minLen,ar=runs(ans),rr=runs(text),g=new Set(),h=new Set();
+ rr.forEach(r=>{for(let i=0;i+n<=r.length;i++)g.add(r.slice(i,i+n))});
+ ar.forEach(a=>{for(let i=0;i+n<=a.length;i++){const x=a.slice(i,i+n);g.has(x)&&h.add(x)}});
+ rr.forEach(r=>{if(r.length<n&&ar.includes(r))h.add(r)});return[...h]}
+/* variants: 任一變體（一行意思）的所有必要字眼組都命中即通過；組內以「、」分隔的是同義選項 */
+function variants(s){
+ if(s.keys)return[{ex:1,gs:s.keys.split(/[,，＋+]/).map(g=>g.split(/[|｜\/／]/).map(x=>x.trim()).filter(Boolean)).filter(g=>g.length)}];
+ return s.text.split('\n').filter(l=>!/^\s*(?:[*\-+•◦‣▪]\s+)?`[^`]*`\s*$/.test(l)).map(l=>{l=l.replace(/^\s*(?:[*\-+•◦‣▪]|\d+[.)])\s*/,'').replace(/[`*]/g,'').replace(/[（(][^）)]*[）)]/g,'').replace(/^(本意|本義|引伸|其他意思)[：:︰]/,'').trim().replace(/^(形容|泛指|指|表示|比喻|用來|用以|亦指|即|也)+/,'').replace(/的?(樣子|模樣|狀態|情形|情況)$/,'');
+  return{ex:0,gs:l.split(/的+/).map(p=>p.split(/[、／\/，；。：！？\s]+/).filter(Boolean)).filter(g=>g.length)}}).filter(v=>v.gs.length)}
+function gradeSense(a,e,s){const na=a.replace(/\s+/g,'');
+ for(const x of e.alts){const nx=x.replace(/\s+/g,'');if(nx&&(na===nx||nx.length>=2&&na.includes(nx)))return{ok:true,g:[{t:'可接受答案：'+x,h:1}]}}
+ let best=null;
+ for(const v of variants(s)){const g=v.gs.map(alts=>({t:alts.slice(0,3).join('/'),h:alts.some(x=>v.ex?na.includes(x):hits(a,x).length>0)}));
+  const k=g.filter(x=>x.h).length,need=g.length>3?Math.ceil(g.length*.7):g.length,ok=k>=need;
+  if(ok)return{ok:true,g};if(!best||k/g.length>best.r)best={g,r:k/g.length}}
+ return{ok:false,g:best?best.g:[]}}
+let queue=[],cur=null,st={n:0,p:0},done=false,hint=0;
+function pick(){const rs=new Set(db.recent.map(r=>r.id));let c=db.words.filter(w=>!rs.has(w.id));if(!c.length)c=db.words.filter(w=>w.id!==cur?.id);if(!c.length)c=db.words;return c[Math.floor(Math.random()*c.length)]}
+const inl=t=>esc(t).split(/(`[^`]+`)/).map(p=>/^`[^`]+`$/.test(p)?'<code>'+p.slice(1,-1)+'</code>':p.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\*([^*\s][^*]*)\*/g,'<i>$1</i>').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')).join('');
+const fmt=t=>t.split('\n').map(l=>{if(!l.trim())return'';let m=l.match(/^(\s*)([*\-+•◦‣▪])\s+(.*)$/);
+ if(m){const lv=/[◦‣▪]/.test(m[2])?2:1+Math.min(2,Math.floor(m[1].replace(/\t/g,'  ').length/2));return`<div class="li l${lv}">${lv===1?'•':lv===2?'◦':'▪'} ${inl(m[3])}</div>`}
+ m=l.match(/^\s*(\d+[.)])\s+(.*)$/);if(m)return`<div class="li l1">${m[1]} ${inl(m[2])}</div>`;
+ m=l.match(/^#{1,4}\s+(.*)$/);if(m)return`<div class="pl"><b>${inl(m[1])}</b></div>`;
+ m=l.match(/^>\s?(.*)$/);if(m)return`<div class="pl bq">${inl(m[1])}</div>`;
+ return`<div class="pl">${inl(l.trim())}</div>`}).join('');
+const exHtml=(a,w=cur?cur.word:'')=>a&&a.length?'<div class="exs">'+a.map((t,i)=>`<div>例${i+1}　${w?esc(t).split(esc(w)).join('<b>'+esc(w)+'</b>'):esc(t)}</div>`).join('')+'</div>':'';
+function relHtml(link){const L=n=>{const e=db.words.find(x=>x.word===n);return link&&e?`<a href="#" data-go="${e.id}">${esc(n)}</a>`:esc(n)};let h='';
+ if(cur.parent&&!link)h+=`<div class="mu">來自於：${L(cur.parent)}</div>`;
+ if(cur.subs&&cur.subs.length)h+='<div class="mu" style="margin-top:6px">附屬／引伸詞語</div>'+cur.subs.map(n=>{const e=db.words.find(x=>x.word===n);const own=e?e.senses.filter(z=>!/引伸意思/.test(z.pos)).map(z=>z.text.replace(/\n/g,'；')).join('｜'):'';return`<div class="ans">${L(n)}${own?' — '+esc(own):''}</div>`}).join('');
+ return h}
+function renderRecent(){$('#recent').innerHTML=db.recent.map(r=>{const w=db.words.find(x=>x.id===r.id);return w?`<details><summary class="${r.ok?'ok':'no'}">${r.ok?'✔':'✘'} ${esc(w.word)}</summary><div class="mu">${w.senses.map(z=>`<div style="margin-top:4px">${z.pos?`<b>${esc(z.pos)}</b>`:''}${fmt(z.text)}${exHtml(z.ex,w.word)}</div>`).join('')}${exHtml(w.ex0,w.word)}</div></details>`:''}).join('')||'<div class="mu">尚無紀錄</div>'}
+function nextP(){if(!db.words.length){cur=null;$('#w').textContent='詞庫是空的，請先到「匯入」分頁';$('#boxes').innerHTML='';renderRecent();return}
+ cur=pick();done=false;hint=0;['#sub','#idk','#hintb'].forEach(x=>$(x).classList.remove('hide'));$('#sent').classList.add('hide');$('#skip').textContent='換一個';$('#gg').classList.add('hide');$('#back').classList.add('hide');
+ $('#w').textContent=cur.word;$('#ex0').innerHTML=exHtml(cur.ex0);$('#rel').innerHTML='';
+ $('#boxes').innerHTML=cur.senses.map((s,i)=>`<div class="bx" data-i="${i}" style="margin:8px 0"><div class="mu">${esc(s.pos||'意思')}</div>${exHtml(s.ex)}<textarea placeholder="輸入意思"></textarea><div class="hn mu"></div><div class="out"></div></div>`).join('');
+ const f=$('#boxes textarea');f&&f.focus();renderRecent();updStat()}
+function updStat(){$('#stat').textContent=db.mode==='review'?`溫習模式｜詞庫 ${db.words.length} 個`:`詞庫 ${db.words.length} 個｜本次作答 ${st.n} 格，通過 ${st.p} 格`;$('#minl').value=db.minLen}
+function finish(ok){done=true;db.recent=[{id:cur.id,ok},...db.recent.filter(r=>r.id!==cur.id)].slice(0,20);save();renderRecent();
+ ['#sub','#idk','#hintb'].forEach(x=>$(x).classList.add('hide'));$('#skip').textContent='下一個';setGG();$('#sw').textContent=cur.word;$('#rel').innerHTML=relHtml();$('#sin').value='';$('#smsg').innerHTML='';$('#sent').classList.remove('hide');updStat()}
+function idk(){if(!cur||done)return;document.querySelectorAll('#boxes .bx').forEach((b,i)=>{const s=cur.senses[i],v=variants(s)[0];st.n++;
+ b.querySelector('.exs')?.remove();b.querySelector('.out').innerHTML=`<b class="no">答案</b>${v?` <span class="mu">必要字眼：${esc(v.gs.map(g=>g.slice(0,3).join('/')).join(' ＋ '))}</span>`:''}<div class="ans">${fmt(s.text)}</div>${exHtml(s.ex)}`});
+ finish(false)}
+function showHint(){if(!cur||done)return;hint++;document.querySelectorAll('#boxes .bx').forEach((b,i)=>{const v=variants(cur.senses[i])[0];
+ b.querySelector('.hn').textContent=v?'提示：'+v.gs.map(g=>[...g[0]].map((c,k)=>k<hint?c:'○').join('')).join(' ＋ '):'（沒有可提示的字眼）'})}
+$('#minl').onchange=e=>{db.minLen=Math.min(6,Math.max(1,+e.target.value||2));save();updStat()};
+function submit(){if(!cur||done)return;const bx=[...document.querySelectorAll('#boxes .bx')];if(!bx.some(b=>b.querySelector('textarea').value.trim()))return;let all=true;
+ bx.forEach((b,i)=>{const s=cur.senses[i],a=b.querySelector('textarea').value.trim(),r=a?gradeSense(a,cur,s):{ok:false,g:[]},ok=r.ok;st.n++;if(ok)st.p++;else all=false;
+  b.querySelector('.exs')?.remove();b.querySelector('.out').innerHTML=`<b class="${ok?'ok':'no'}">${ok?'✔ 通過':'✘ 未通過'}</b> ${r.g.map(x=>`<span class="${x.h?'ok':'no'}">${x.h?'✔':'✘'} ${esc(x.t)}</span>`).join('　')}<div class="ans">${fmt(s.text)}</div>${exHtml(s.ex)}<div class="cm mu"></div>${ok?'':`<button class="b g" data-a="alt" data-i="${i}">我的答案也算對</button><button class="b g" data-a="ask" data-i="${i}">請 Claude 判斷</button>`}`});
+ finish(all)}
+$('#boxes').onclick=async e=>{const a=e.target.dataset.a;if(!a)return;const i=+e.target.dataset.i,b=e.target.closest('.bx'),ans=b.querySelector('textarea').value.trim(),m=b.querySelector('.cm'),s=cur.senses[i];
+ if(a==='alt'){cur.alts.push(ans);save();m.textContent='已加入可接受答案（之後同樣答法會通過）'}
+ else{m.textContent='Claude 判斷中…';try{const sm=window.claude&&await claude.use('sample');if(!sm){m.textContent='此環境無法使用 Claude 判斷';return}
+  const j=await sm.json(`你是中文詞語練習的評分者。詞語：「${cur.word}」${s.pos?'（'+s.pos+'）':''}。標準釋義：${s.text}\n使用者的答案：「${ans}」\n判斷答案語意是否與標準釋義相符（同義詞、換句話說皆算對）。只回覆 JSON：{"pass":true或false,"reason":"一句繁體中文說明"}`,{modelTier:'quick'});
+  m.innerHTML=`<b class="${j.pass?'ok':'no'}">Claude：${j.pass?'語意相符':'語意不符'}</b> ${esc(j.reason)}`}catch(err){m.textContent='Claude 判斷失敗或未授權'}}};
+/* 模式切換與溫習模式 */
+const hist=[];
+function setGG(){const a=$('#gg');a.href='https://www.google.com/search?q='+encodeURIComponent(cur.word+' 意思');a.textContent=`Google 搜尋「${cur.word} 意思」`;a.classList.remove('hide')}
+function next(){if(db.mode!=='review'||!db.words.length)return nextP();
+ const c=db.words.filter(w=>w.id!==(cur&&cur.id));showReview(c.length?c[Math.floor(Math.random()*c.length)]:db.words[0])}
+function showReview(w,push=true){if(push&&cur)hist.push(cur.id);cur=w;done=false;
+ ['#sub','#idk','#hintb'].forEach(x=>$(x).classList.add('hide'));$('#skip').textContent='下一個';
+ $('#w').textContent=w.word;const pe=db.words.find(x=>x.word===w.parent);
+ $('#ex0').innerHTML=(w.parent?`<div class="mu" style="margin:6px 0">來自於：${pe?`<a href="#" data-go="${pe.id}">${esc(w.parent)}</a>`:esc(w.parent)}</div>`:'')+exHtml(w.ex0);
+ $('#boxes').innerHTML=[...w.senses].sort((a,b)=>(/引伸意思/.test(b.pos)?1:0)-(/引伸意思/.test(a.pos)?1:0)).map(z=>`<div class="bx" style="margin:8px 0"><div class="mu">${esc(z.pos||'意思')}</div><div class="ans">${fmt(z.text)}</div>${exHtml(z.ex)}</div>`).join('');
+ $('#rel').innerHTML=relHtml(true);$('#sw').textContent=w.word;$('#sin').value='';$('#smsg').innerHTML='';$('#sent').classList.remove('hide');
+ setGG();$('#back').classList.toggle('hide',!hist.length);updStat();scrollTo(0,0)}
+function setMode(m){db.mode=m;save();$('#t-practice').classList.toggle('rv',m==='review');$('#m-p').classList.toggle('g',m==='review');$('#m-r').classList.toggle('g',m!=='review');hist.length=0;cur=null;next()}
+$('#m-p').onclick=()=>setMode('practice');$('#m-r').onclick=()=>setMode('review');
+$('#rel').addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();const w=db.words.find(x=>x.id===a.dataset.go);if(w)showReview(w)});
+$('#ex0').addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();const w=db.words.find(x=>x.id===a.dataset.go);if(w)showReview(w)});
+$('#back').onclick=()=>{const w=db.words.find(x=>x.id===hist.pop());if(w)showReview(w,false)};
+$('#sub').onclick=submit;$('#skip').onclick=next;$('#idk').onclick=idk;$('#hintb').onclick=showHint;
+/* 造句 */
+const nd=d=>{const h=d.getHours();return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日 ${h<12?'上午':'下午'}${h%12||12}:${String(d.getMinutes()).padStart(2,'0')}`};
+const mdFor=x=>`# ${x.text.replace(/\n/g,' ')}\n\n完整摘錄: \n類別: 句子, 練習\n常用？: \n頁面來源: \n日期: ${nd(new Date(x.date))}\n詞庫來源: `;
+async function offer(name,data,el){let ok=false;try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:name,data});ok=true}}catch(e){}
+ if(!ok){el.innerHTML='無法直接下載，請複製下面內容自行存成檔案：<textarea readonly></textarea>';const t=el.querySelector('textarea');t.value=data;t.select()}return ok}
+const fname=x=>x.text.slice(0,30).replace(/[\\\/:*?"<>|\s]+/g,'_')+'.md';
+async function saveSent(exp){const t=$('#sin').value.trim();if(!t||!cur)return;const x={id:uid(),text:t,word:cur.word,date:new Date().toISOString()};db.sents.unshift(x);save();
+ $('#smsg').textContent='已儲存';$('#sin').value='';if(exp)await offer(fname(x),mdFor(x),$('#smsg'))}
+$('#ssave').onclick=()=>saveSent(true);$('#ssave2').onclick=()=>saveSent(false);
+function renderSents(){$('#slist').innerHTML=db.sents.length?db.sents.map(x=>`<div class="row2" data-id="${x.id}"><div>${esc(x.text)}</div><div class="mu">${esc(x.word)}｜${nd(new Date(x.date))}</div><button class="b g" data-e="1">匯出 .md</button><button class="b g" data-d="1">刪除</button></div>`).join(''):'<div class="mu">尚無造句</div>'}
+$('#slist').addEventListener('click',e=>{const t=e.target,r=t.closest('.row2');if(!r)return;const x=db.sents.find(y=>y.id===r.dataset.id);if(!x)return;
+ if(t.dataset.e)offer(fname(x),mdFor(x),$('#sentmsg'));else if(t.dataset.d)arm(t,'再按一次確認刪除',()=>{db.sents=db.sents.filter(y=>y!==x);save();renderSents()})});
+$('#sentcsv').onclick=()=>{if(!db.sents.length)return;const q=v=>'"'+String(v).replace(/"/g,'""')+'"';
+ offer('造句.csv','\uFEFF'+['名稱,完整摘錄,類別,常用？,頁面來源,日期,詞庫來源',...db.sents.map(x=>[q(x.text),'',q('句子, 練習'),'','',q(nd(new Date(x.date))),''].join(','))].join('\r\n'),$('#sentmsg'))};
+$('#boxes').onkeydown=e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();submit()}};
+tab('practice');setMode(db.mode||'practice');
+</script>
+</body>
+</html>
+
+</body></html>
