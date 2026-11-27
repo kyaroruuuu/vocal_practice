@@ -1,0 +1,8 @@
+source/work/
+node_modules/
+dist/
+*.tgz
+.srcpass
+# 明文詞庫只在本機處理，加密後放 vault/
+/vocab-data.json
+/img/

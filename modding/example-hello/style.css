@@ -1,0 +1,3 @@
+/* 模組可以帶自己的樣式；盡量沿用網站的變數（顏色、尺寸），深色模式會自動跟隨 */
+.hello-card { display: flex; align-items: center; gap: var(--spacing-4); }
+.hello-card p { margin: 0; font-size: 1.1rem; }

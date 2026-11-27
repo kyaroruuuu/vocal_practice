@@ -1,0 +1,8 @@
+{
+  "id": "hello",
+  "name": "你好",
+  "desc": "範例模組：一頁計數器，示範怎樣用網站的元件和樣式。",
+  "v": "1.0.0",
+  "author": "你的名字",
+  "page": { "key": "hello", "label": "你好", "icon": "package", "order": 50 }
+}
