@@ -186,7 +186,7 @@ details{margin:0.25rem 0}summary{cursor:pointer}
 /* ---------- practice ---------- */
 #t-practice{display:grid;grid-template-columns:minmax(0,1fr) 15.5rem;gap:var(--spacing-4);align-items:start}
 #t-practice>aside{position:sticky;top:var(--spacing-6);order:2;max-height:calc(100vh - 3rem);overflow:auto}
-#t-practice.rv{grid-template-columns:1fr}#t-practice.rv>aside,.rv #minlbox{display:none}
+#t-practice.rv>aside,.rv #minlbox{display:none}
 @media(max-width:1099px){#t-practice{grid-template-columns:1fr}#t-practice>aside{position:static;max-height:none}}
 .pcard{padding:var(--spacing-6)}
 .pmeta{display:flex;flex-wrap:wrap;gap:0.375rem;justify-content:center}
@@ -863,6 +863,16 @@ input[type=file]::file-selector-button{height:var(--h-m);padding:0 .875rem}
 .shell .railonly{display:none}.shell.rail .railonly{display:grid;position:relative}.shell.rail .railfirst{margin-top:auto}
 .shell.rail .railfirst~.railtheme{margin-top:0}
 .shell.rail .railonly .dot{position:absolute;top:8px;right:8px}
+.hn{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:8px;font-size:1rem}.hn>svg{width:1.05rem;height:1.05rem;color:var(--color-warning,#b7791f);flex:none}
+.hchip{display:inline-flex;align-items:center;gap:1px;padding:2px 10px;border-radius:999px;background:var(--color-background-muted);border:1px solid var(--color-border);font-size:1.05rem;letter-spacing:.08em}
+.hchip b{font-weight:700;color:var(--color-text-primary)}.hchip .hm{color:var(--color-text-secondary);opacity:.7}
+.hplus{font-style:normal;color:var(--color-text-secondary);margin:0 6px 0 -2px;letter-spacing:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.out .keys{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px}
+.alts{margin-top:var(--spacing-3);border:1px solid var(--color-border);border-radius:var(--radius-element);padding:8px 12px;background:var(--color-background-surface)}
+.alts summary{cursor:pointer;display:flex;align-items:center;gap:6px;font-weight:600}.alts summary svg{color:var(--color-success);width:1rem;height:1rem}
+.alts>div{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.achip{display:inline-block;padding:2px 10px;border-radius:999px;border:1px solid color-mix(in srgb,var(--color-success) 40%,transparent);background:color-mix(in srgb,var(--color-success) 8%,transparent);font-size:.95rem}
 </style>
 </head>
 <body>

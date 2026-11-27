@@ -11,7 +11,7 @@
   },
   {
    "id": "practice",
-   "v": "1.0.0",
+   "v": "1.1.0",
    "enc": true,
    "parent": "vault",
    "requires": [
@@ -25,8 +25,8 @@
    },
    "name": "練習",
    "desc": "看詞語寫出意思、對答案、溫習、朗讀。",
-   "file": "kyaroru-practice-v1.0.0.zip",
-   "size": 35830
+   "file": "kyaroru-practice-v1.1.0.zip",
+   "size": 37403
   },
   {
    "id": "gallery",
