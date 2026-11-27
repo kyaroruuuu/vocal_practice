@@ -3,11 +3,11 @@
  "modules": [
   {
    "id": "vault",
-   "v": "1.0.0",
+   "v": "1.0.1",
    "name": "詞庫",
    "desc": "用詞庫密鑰解鎖練習、圖鑑、房間的詞語；也可鎖上詞庫。",
-   "file": "kyaroru-vault-v1.0.0.zip",
-   "size": 9107
+   "file": "kyaroru-vault-v1.0.1.zip",
+   "size": 9277
   },
   {
    "id": "practice",
@@ -30,7 +30,7 @@
   },
   {
    "id": "gallery",
-   "v": "1.0.0",
+   "v": "1.1.0",
    "enc": true,
    "parent": "vault",
    "requires": [
@@ -44,8 +44,8 @@
    },
    "name": "圖鑑",
    "desc": "瀏覽、篩選和搜尋整個詞庫，查看詞卡。",
-   "file": "kyaroru-gallery-v1.0.0.zip",
-   "size": 56772
+   "file": "kyaroru-gallery-v1.1.0.zip",
+   "size": 94932
   },
   {
    "id": "room",
@@ -68,7 +68,7 @@
   },
   {
    "id": "write",
-   "v": "1.0.0",
+   "v": "1.0.1",
    "page": {
     "key": "write",
     "label": "寫作",
@@ -77,8 +77,8 @@
    },
    "name": "寫作",
    "desc": "加密的寫作空間：富文本編輯、橫直書、註腳、匯出圖片。",
-   "file": "kyaroru-write-v1.0.0.zip",
-   "size": 863937
+   "file": "kyaroru-write-v1.0.1.zip",
+   "size": 863645
   },
   {
    "id": "mdx",
