@@ -4,7 +4,7 @@
 
 中文詞語練習與寫作網站：練習詞語、翻查詞卡，再用學到的詞語寫作、排版、匯出成圖片。
 
-網址：<https://kyaroruuuu.github.io/vocal_practice/>
+網址：<https://kyaroruuuu.github.io/writing_system/>
 
 不用安裝、不用登入，用瀏覽器打開就可以；手機和電腦都適用。
 
@@ -16,7 +16,7 @@
 
 網站本身只有外框和版面，功能都是模組，每個模組是一個 `.zip` 檔：
 
-1. 到 [Releases](https://github.com/kyaroruuuu/vocal_practice/releases/latest) 下載需要的模組，例如 `kyaroru-write-v….zip`（寫作）。
+1. 到 [Releases](https://github.com/kyaroruuuu/writing_system/releases/latest) 下載需要的模組，例如 `kyaroru-write-v….zip`（寫作）。
 2. 按側欄底部的「模組」（手機在下方「更多」），選擇或拖放 .zip 檔安裝，可以一次選多個。
 3. 不需要的模組可以卸下；卸下不會刪除文章或練習紀錄。
 
@@ -67,7 +67,7 @@
 
 ## 下載版本
 
-到 [Releases](https://github.com/kyaroruuuu/vocal_practice/releases/latest) 下載
+到 [Releases](https://github.com/kyaroruuuu/writing_system/releases/latest) 下載
 
 - 離線版不含任何詞庫、圖片或卡羅的資料，只保留介面、格式和排版功能。
 - 解壓後用瀏覽器打開 `index.html` 即可，不用上網。用雲端字體匯出圖片時才需要連線。
