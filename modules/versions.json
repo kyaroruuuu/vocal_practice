@@ -1,5 +1,5 @@
 {
- "v": "1.0.1",
+ "v": "1.0.3",
  "modules": [
   {
    "id": "vault",
@@ -26,7 +26,7 @@
    "name": "練習",
    "desc": "看詞語寫出意思、對答案、溫習、朗讀。",
    "file": "kyaroru-practice-v1.0.0.zip",
-   "size": 35840
+   "size": 35830
   },
   {
    "id": "gallery",
@@ -45,7 +45,7 @@
    "name": "圖鑑",
    "desc": "瀏覽、篩選和搜尋整個詞庫，查看詞卡。",
    "file": "kyaroru-gallery-v1.0.0.zip",
-   "size": 56782
+   "size": 56772
   },
   {
    "id": "room",
