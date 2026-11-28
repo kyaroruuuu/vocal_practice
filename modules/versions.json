@@ -87,7 +87,7 @@
   },
   {
    "id": "home",
-   "v": "1.0.0",
+   "v": "1.0.1",
    "requires": [
     "write"
    ],
@@ -101,8 +101,8 @@
    },
    "name": "首頁",
    "desc": "歡迎頁：時鐘、農曆節氣、解鎖寫作（可保持解鎖）、今日一詞、繼續寫、寫作日曆。",
-   "file": "kyaroru-home-v1.0.0.zip",
-   "size": 385149
+   "file": "kyaroru-home-v1.0.1.zip",
+   "size": 386022
   },
   {
    "id": "write",
