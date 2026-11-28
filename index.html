@@ -1296,6 +1296,20 @@ input[type=file]::file-selector-button{height:var(--h-m);padding:0 .875rem}
 .hm-bg.site>i{display:none}
 .hm-bg.site~.shell #ol{background:transparent}
 .hm-bg.site~.shell #ol .top{background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(8px)}
+/* 霧化玻璃：有流動背景時，側欄和內容方塊半透明＋背景模糊 */
+.hm-bg.site~.shell{--glass-b:blur(18px) saturate(1.25);--glass-hl:inset 0 1px 0 rgba(255,255,255,.45)}
+:root[data-theme="dark"] .hm-bg.site~.shell{--glass-hl:inset 0 1px 0 rgba(255,255,255,.05)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .hm-bg.site~.shell{--glass-hl:inset 0 1px 0 rgba(255,255,255,.05)}}
+.hm-bg.site~.shell .wr-sb,.hm-bg.site~.shell #ol .side{background-color:color-mix(in srgb,var(--color-background-muted) 58%,transparent);-webkit-backdrop-filter:var(--glass-b);backdrop-filter:var(--glass-b)}
+.hm-bg.site~.shell .sidenav{background-color:color-mix(in srgb,var(--color-background-surface) 55%,transparent);-webkit-backdrop-filter:var(--glass-b);backdrop-filter:var(--glass-b)}
+.hm-bg.site~.shell .card,.hm-bg.site~.shell #ol .card{background-color:color-mix(in srgb,var(--color-background-surface) 62%,transparent);-webkit-backdrop-filter:var(--glass-b);backdrop-filter:var(--glass-b);box-shadow:var(--glass-hl),0 8px 30px -18px rgba(30,40,30,.25)}
+.hm-bg.site~.shell .mod{background-color:transparent}
+.hm-bg.site~.shell .wr-item{background-color:color-mix(in srgb,var(--color-background-surface) 45%,transparent)}
+/* 寫作稿紙：保留較高的不透明度，打字時文字清楚 */
+.hm-bg.site~.shell .card.wr-ed,.hm-bg.site~.shell #ol .card.wr-ed{background-color:color-mix(in srgb,var(--color-background-surface) 84%,transparent)}
+.hm-bg.site~.shell .card.wr-ed .wr-tb{background-color:transparent}
+/* 首頁右邊的方塊 */
+#hm .hm-side{background:color-mix(in srgb,var(--hm-card) 60%,transparent);-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25)}
 </style>
 </head>
 <body>
