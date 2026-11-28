@@ -87,17 +87,18 @@
   },
   {
    "id": "write",
-   "v": "1.0.2",
+   "v": "1.1.0",
    "page": {
     "key": "write",
     "label": "寫作",
     "icon": "write",
-    "order": 4
+    "order": 4,
+    "full": true
    },
    "name": "寫作",
    "desc": "加密的寫作空間：富文本編輯、橫直書、註腳、匯出圖片。",
-   "file": "kyaroru-write-v1.0.2.zip",
-   "size": 865138
+   "file": "kyaroru-write-v1.1.0.zip",
+   "size": 875418
   },
   {
    "id": "mdx",
@@ -119,7 +120,7 @@
   },
   {
    "id": "outline",
-   "v": "1.0.1",
+   "v": "1.1.0",
    "requires": [
     "write"
    ],
@@ -133,8 +134,8 @@
    },
    "name": "大綱",
    "desc": "小說與短篇故事的大綱：人物、場景、事件時序、章節、伏筆、關連圖；與寫作共用密語加密。",
-   "file": "kyaroru-outline-v1.0.1.zip",
-   "size": 1251782
+   "file": "kyaroru-outline-v1.1.0.zip",
+   "size": 1293242
   }
  ]
 }
