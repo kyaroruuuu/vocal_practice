@@ -86,25 +86,6 @@
    "size": 83690
   },
   {
-   "id": "home",
-   "v": "1.0.1",
-   "requires": [
-    "write"
-   ],
-   "page": {
-    "key": "home",
-    "label": "首頁",
-    "icon": "home",
-    "order": 0,
-    "group": "home",
-    "full": true
-   },
-   "name": "首頁",
-   "desc": "歡迎頁：時鐘、農曆節氣、解鎖寫作（可保持解鎖）、今日一詞、繼續寫、寫作日曆。",
-   "file": "kyaroru-home-v1.0.1.zip",
-   "size": 386022
-  },
-  {
    "id": "write",
    "v": "1.7.0",
    "page": {
@@ -117,7 +98,7 @@
    "name": "寫作",
    "desc": "加密的寫作空間：富文本編輯、橫直書、註腳、匯出圖片。",
    "file": "kyaroru-write-v1.7.0.zip",
-   "size": 1365648
+   "size": 1365494
   },
   {
    "id": "mdx",
