@@ -87,7 +87,7 @@
   },
   {
    "id": "write",
-   "v": "1.1.2",
+   "v": "1.2.0",
    "page": {
     "key": "write",
     "label": "寫作",
@@ -97,8 +97,8 @@
    },
    "name": "寫作",
    "desc": "加密的寫作空間：富文本編輯、橫直書、註腳、匯出圖片。",
-   "file": "kyaroru-write-v1.1.2.zip",
-   "size": 882310
+   "file": "kyaroru-write-v1.2.0.zip",
+   "size": 897603
   },
   {
    "id": "mdx",
