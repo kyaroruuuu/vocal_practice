@@ -119,7 +119,7 @@
   },
   {
    "id": "outline",
-   "v": "1.0.0",
+   "v": "1.0.1",
    "requires": [
     "write"
    ],
@@ -133,8 +133,8 @@
    },
    "name": "大綱",
    "desc": "小說與短篇故事的大綱：人物、場景、事件時序、章節、伏筆、關連圖；與寫作共用密語加密。",
-   "file": "kyaroru-outline-v1.0.0.zip",
-   "size": 1247239
+   "file": "kyaroru-outline-v1.0.1.zip",
+   "size": 1251782
   }
  ]
 }
