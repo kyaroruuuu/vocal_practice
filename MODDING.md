@@ -37,7 +37,7 @@
 | `name`、`desc` | 顯示在「模組」頁 |
 | `v` | 版本號，例如 `1.0.0` |
 | `author` | 作者名稱，安裝前會顯示給使用者 |
-| `page` | 想在側欄加一頁時才需要：`key` 是網址（`#hello`），`label` 是側欄文字，`order` 是次序（官方頁面是 1–4），`icon` 可用 `practice`、`quiz`、`gallery`、`room`、`write`、`book`、`package`；`group` 是側欄分組，`learn`（學習，預設）或 `create`（創作） |
+| `page` | 想在側欄加一頁時才需要：`key` 是網址（`#hello`），`label` 是側欄文字，`order` 是次序（官方頁面是 1–4），`icon` 可用 `practice`、`quiz`、`gallery`、`room`、`write`、`outline`、`book`、`package`；`group` 是側欄分組，`learn`（學習，預設）或 `create`（創作）；`full: true` 表示整頁由模組接管（網站的側欄和頂欄會隱藏，網址可以是 `#hello-…`），模組要自己提供返回的方法 |
 | `parent` | 上層模組：在「模組」頁會排在它下面，並且要先安裝它 |
 | `requires` | 其他前置模組：要先安裝，載入時也會先載入它們 |
 

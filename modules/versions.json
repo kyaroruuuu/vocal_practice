@@ -87,7 +87,7 @@
   },
   {
    "id": "write",
-   "v": "1.0.1",
+   "v": "1.0.2",
    "page": {
     "key": "write",
     "label": "寫作",
@@ -96,8 +96,8 @@
    },
    "name": "寫作",
    "desc": "加密的寫作空間：富文本編輯、橫直書、註腳、匯出圖片。",
-   "file": "kyaroru-write-v1.0.1.zip",
-   "size": 863645
+   "file": "kyaroru-write-v1.0.2.zip",
+   "size": 865138
   },
   {
    "id": "mdx",
@@ -116,6 +116,25 @@
    "desc": "一鍵把文章轉成繁體或簡體。",
    "file": "kyaroru-opencc-v1.0.0.zip",
    "size": 2257898
+  },
+  {
+   "id": "outline",
+   "v": "1.0.0",
+   "requires": [
+    "write"
+   ],
+   "page": {
+    "key": "outline",
+    "label": "大綱",
+    "icon": "outline",
+    "order": 5,
+    "group": "create",
+    "full": true
+   },
+   "name": "大綱",
+   "desc": "小說與短篇故事的大綱：人物、場景、事件時序、章節、伏筆、關連圖；與寫作共用密語加密。",
+   "file": "kyaroru-outline-v1.0.0.zip",
+   "size": 1247239
   }
  ]
 }
